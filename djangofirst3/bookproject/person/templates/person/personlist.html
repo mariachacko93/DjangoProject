@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>personlist</title>
+</head>
+<body>
+<a href="{%url 'create'%}">create new employee</a>
+{%for person in person%}
+
+    personname:{{person.personname}}
+    age:{{person.age}}
+    salary:{{person.salary}}
+    desig:{{person.desig}}
+
+<hr>
+    {%endfor%}
+</body>
+</html>
